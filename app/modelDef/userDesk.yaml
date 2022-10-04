@@ -1,0 +1,27 @@
+tableName: 'paid_time_user_desk'
+properties:
+  id:
+    type: integer
+    autoIncrement: true
+    primaryKey: true
+  startTime:
+    type: date
+    description: '开始时间'
+  endTime:
+    type: date
+    description: '结束时间'
+  createdAt:
+    type: date
+    allowNull: false
+  updatedAt:
+    type: date
+    allowNull: false
+  deletedAt:
+    type: date
+relations:
+  user:
+    type: 'belongsTo'
+    model: 'User'
+  desk:
+    type: 'belongsTo'
+    model: 'Desk'

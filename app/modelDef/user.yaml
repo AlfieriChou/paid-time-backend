@@ -1,22 +1,23 @@
-tableName: 'paid_time_desk'
+tableName: 'paid_time_user'
 properties:
   id:
     type: integer
     autoIncrement: true
     primaryKey: true
-  code:
-    type: string
-    length: 64
-    description: '编码'
   name:
     type: string
     length: 64
     description: '名称'
-  status:
+  phone:
+    type: string
+    length: 64
+    default: ''
+    description: '手机号'
+  role:
     type: string
     length: 32
-    default: 'FREE'
-    description: '状态 USING-使用中 FREE-空闲 DISABLE-禁用 MAINTAIN-维护中'
+    default: 'GUEST'
+    description: '状态 MEMBER-会员 ADMIN-管理员 GUEST-游客'
   createdAt:
     type: date
     allowNull: false
