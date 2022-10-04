@@ -22,8 +22,6 @@ class Framework extends BaseFramework {
   }
 
   async beforeClose () {
-    this.schedule.softExit()
-    this.amqp.softExit()
   }
 }
 

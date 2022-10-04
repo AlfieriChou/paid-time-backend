@@ -14,10 +14,7 @@ const {
   REDIS_HOST,
 
   // port
-  PORT,
-
-  // amqp
-  AMQP_URL
+  PORT
 } = process.env
 
 assert(MYSQL_HOST, 'require env MYSQL_HOST')
@@ -26,7 +23,6 @@ assert(MYSQL_PASSWORD, 'require env MYSQL_PASSWORD')
 assert(MYSQL_DB, 'require env MYSQL_DB')
 assert(REDIS_HOST, 'require env REDIS_HOST')
 assert(PORT, 'require env PORT')
-assert(AMQP_URL, 'require env AMQP_URL')
 
 module.exports = {
   models: {

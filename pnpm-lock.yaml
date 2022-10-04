@@ -7,6 +7,7 @@ specifiers:
   '@galenjs/framework-next': 1.2.0
   '@galenjs/swagger': ^1.0.0
   cspell: ^5.19.2
+  dotenv: ^16.0.3
   eslint: ^8.11.0
   eslint-config-standard: ^17.0.0
   eslint-friendly-formatter: ^4.0.1
@@ -26,6 +27,7 @@ dependencies:
   '@galenjs/factories': 1.0.17
   '@galenjs/framework-next': 1.2.0_7lx3jklj42tuxxxyhu2kpkyw4i
   '@galenjs/swagger': 1.0.0
+  dotenv: 16.0.3
   expire-store: 1.0.2
   koa-body: 5.0.0
   koa-bodyparser: 4.3.0
@@ -1561,6 +1563,11 @@ packages:
     dependencies:
       is-obj: 2.0.0
     dev: true
+
+  /dotenv/16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
+    dev: false
 
   /dottie/2.0.2:
     resolution: {integrity: sha512-fmrwR04lsniq/uSr8yikThDTrM7epXHBAAjH9TbeH3rEA8tdCO7mRzB9hdmdGyJCxF8KERo9CITcm3kGuoyMhg==}
