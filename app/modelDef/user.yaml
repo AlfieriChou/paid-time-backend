@@ -26,3 +26,8 @@ properties:
     allowNull: false
   deletedAt:
     type: date
+relations:
+  desks:
+    type: 'belongsToMany'
+    model: 'Desk'
+    through: 'UserDesk'
