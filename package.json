@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "@galenjs/factories": "^1.4.0",
-    "@galenjs/framework-next": "1.4.1",
+    "@galenjs/framework-next": "1.4.3",
     "@galenjs/swagger": "^1.4.0",
     "dotenv": "^16.0.3",
     "expire-store": "^1.0.2",

@@ -67,7 +67,7 @@ module.exports = {
     }
   },
   port: parseInt(PORT || '3000', 10),
-  loggerOptions: {
+  logger: {
     logDir: `${process.cwd()}/logs`
   }
 }

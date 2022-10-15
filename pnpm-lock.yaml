@@ -4,7 +4,7 @@ specifiers:
   '@commitlint/cli': ^17.1.2
   '@commitlint/config-conventional': ^17.1.0
   '@galenjs/factories': ^1.4.0
-  '@galenjs/framework-next': 1.4.1
+  '@galenjs/framework-next': 1.4.3
   '@galenjs/swagger': ^1.4.0
   dotenv: ^16.0.3
   eslint: ^8.11.0
@@ -24,7 +24,7 @@ specifiers:
 
 dependencies:
   '@galenjs/factories': 1.4.0
-  '@galenjs/framework-next': 1.4.1_sraicxu7jh6nqvugrm36gp3neu
+  '@galenjs/framework-next': 1.4.3_sraicxu7jh6nqvugrm36gp3neu
   '@galenjs/swagger': 1.4.0
   dotenv: 16.0.3
   expire-store: 1.0.2
@@ -296,8 +296,8 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@galenjs/framework-next/1.4.1_sraicxu7jh6nqvugrm36gp3neu:
-    resolution: {integrity: sha512-tiAiA/U+MHsLUK+Tu1YAOotPuv0KNQ4WnnX19+l5nihJg2JnPa/I8qrL7yPG7Q7bEMLSs6BOwGP2CzFVvGbFIw==}
+  /@galenjs/framework-next/1.4.3_sraicxu7jh6nqvugrm36gp3neu:
+    resolution: {integrity: sha512-9vwLvLt1ducPMjspRSJM0YfZ8CY8Q395meJHftUPACEOEzZmV4i/ss8UBaL8bMrxRuaPS9jlr62IPrXzWMeQSQ==}
     peerDependencies:
       '@galenjs/factories': ^1.4.0
       '@pyroscope/nodejs': ^0.2.4
