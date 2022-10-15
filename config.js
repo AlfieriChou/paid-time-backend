@@ -46,10 +46,10 @@ module.exports = {
   plugins: ['doc'].reduce(
     (
       ret,
-      item
+      plugin
     ) => [...ret, {
-      path: path.join(process.cwd(), `plugins/${item}`),
-      name: item
+      path: path.join(process.cwd(), `plugins/${plugin}`),
+      name: plugin
     }],
     []
   ),
