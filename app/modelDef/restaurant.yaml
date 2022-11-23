@@ -35,8 +35,7 @@ properties:
     type: date
 remoteMethods:
   remoteRandom:
-    path: '/randomRestaurant'
-    responseType: 'origin'
+    path: '/random'
     method: 'get'
     tags:
       - restaurant

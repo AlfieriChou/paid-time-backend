@@ -10,7 +10,7 @@ module.exports = Model => {
         distinct: true
       })
       const offset = count > LIMIT ? Math.floor(Math.random() * count) + 1 : 0
-      const restaurants = await ctx.models.Restaurant.findAll({
+      const restaurants = await ctx.models.Restaurant.find({
         where: {
           status: 'DEFAULT'
         },
@@ -18,9 +18,8 @@ module.exports = Model => {
           ['seq', 'ASC']
         ],
         offset: offset > LIMIT ? offset - LIMIT : offset,
-        limit: LIMIT,
-        raw: true
-      })
+        limit: LIMIT
+      }, ctx)
       const restaurant = restaurants[restaurants.length - 1]
       if (!restaurant) {
         ctx.throw(400, '数据缺失')
