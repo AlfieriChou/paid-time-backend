@@ -1,0 +1,35 @@
+tableName: 'paid_time_restaurant'
+properties:
+  id:
+    type: integer
+    autoIncrement: true
+    primaryKey: true
+  name:
+    type: string
+    length: 64
+    description: '名称'
+  address:
+    type: string
+    length: 128
+    description: '地址'
+  remark:
+    type: string
+    length: 255
+    description: '备注'
+  status:
+    type: string
+    length: 32
+    default: 'DEFAULT'
+    description: '状态 DEFAULT-默认 DISABLE-禁用 CLOSE-关闭'
+  seq:
+    type: integer
+    default: 1
+    description: '权重'
+  createdAt:
+    type: date
+    allowNull: false
+  updatedAt:
+    type: date
+    allowNull: false
+  deletedAt:
+    type: date
