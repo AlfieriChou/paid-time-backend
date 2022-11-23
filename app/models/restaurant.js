@@ -31,7 +31,13 @@ module.exports = Model => {
           return item
         })
       }).flat()
-      return list[Math.floor(Math.random() * list.length) + 1]
+      const randomRestaurant = list[Math.floor(Math.random() * list.length) + 1]
+      await ctx.models.Restaurant.increment({
+        seq: 1
+      }, {
+        where: { id: randomRestaurant.id }
+      })
+      return randomRestaurant
     }
   }
 }
