@@ -33,3 +33,15 @@ properties:
     allowNull: false
   deletedAt:
     type: date
+remoteMethods:
+  remoteRandom:
+    path: '/randomRestaurant'
+    responseType: 'origin'
+    method: 'get'
+    tags:
+      - restaurant
+    summary: '随机一家餐厅'
+    output:
+      200:
+        type: object
+        model: Restaurant

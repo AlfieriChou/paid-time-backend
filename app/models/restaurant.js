@@ -1,3 +1,5 @@
+const LIMIT = 5
+
 module.exports = Model => {
   return class extends Model {
     static async remoteRandom (ctx) {
@@ -7,7 +9,7 @@ module.exports = Model => {
         },
         distinct: true
       })
-      const offset = Math.floor(Math.random() * count) + 1
+      const offset = count > LIMIT ? Math.floor(Math.random() * count) + 1 : 0
       const restaurants = await ctx.models.Restaurant.findAll({
         where: {
           status: 'DEFAULT'
@@ -15,8 +17,8 @@ module.exports = Model => {
         order: [
           ['seq', 'ASC']
         ],
-        offset: offset > 5 ? offset - 5 : offset,
-        limit: 5,
+        offset: offset > LIMIT ? offset - LIMIT : offset,
+        limit: LIMIT,
         raw: true
       })
       const restaurant = restaurants[restaurants.length - 1]
@@ -25,7 +27,7 @@ module.exports = Model => {
       }
       const { seq } = restaurant
       const list = restaurants.map(item => {
-        return new Array((seq - item.seq) || 1).fill(1).map(_item => {
+        return new Array(seq - item.seq + 1).fill(1).map(_item => {
           return item
         })
       }).flat()
